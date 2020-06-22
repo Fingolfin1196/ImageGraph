@@ -1,0 +1,16 @@
+# Test images
+img/
+
+# Build directories
+build/
+build-*/
+cmake-build-*/
+
+# Editor files
+.idea/
+.kdev4/
+.vscode/
+.clangd/
+.ccls-cache/
+.gdb_history
+compile_commands.json

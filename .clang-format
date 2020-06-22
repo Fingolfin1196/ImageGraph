@@ -1,0 +1,17 @@
+Language: Cpp
+
+AccessModifierOffset: -2
+AllowShortBlocksOnASingleLine: Always
+AllowShortCaseLabelsOnASingleLine: true
+AllowShortFunctionsOnASingleLine: All
+AllowShortIfStatementsOnASingleLine: WithoutElse
+AllowShortLambdasOnASingleLine: All
+AllowShortLoopsOnASingleLine: true
+AlwaysBreakTemplateDeclarations: No
+BreakBeforeBraces: Attach
+ColumnLimit: 120
+AlignEscapedNewlines: DontAlign
+IndentCaseLabels: true
+PointerAlignment: Left
+SpaceAfterTemplateKeyword: false
+UseTab: Never
