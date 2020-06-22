@@ -14,3 +14,6 @@ cmake-build-*/
 .ccls-cache/
 .gdb_history
 compile_commands.json
+
+# nix stuff
+**/result
