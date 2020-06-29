@@ -4,7 +4,7 @@
 #include "Random.hpp"
 #include <iomanip>
 #include <memory>
-#include <pcg_random.hpp>
+#include "PCG.hpp"
 #include <random>
 #include <set>
 

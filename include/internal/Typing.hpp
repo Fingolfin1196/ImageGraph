@@ -1,10 +1,10 @@
 #pragma once
 
 #include "../core/Definitions.hpp"
+#include "PCG.hpp"
 #include <boost/core/typeinfo.hpp>
 #include <boost/type_index.hpp>
 #include <optional>
-#include <pcg_random.hpp>
 #include <random>
 #include <tuple>
 #include <type_traits>

@@ -10,7 +10,7 @@ add_library(ImageGraph SHARED)
 # C++ Standard Version and Compiler settings.
 set_target_properties(ImageGraph PROPERTIES CXX_STANDARD 20)
 target_compile_options(ImageGraph PRIVATE -Wpedantic -Werror -Wextra)
-target_compile_options(ImageGraph PRIVATE $<$<CONFIG:RELEASE>:-Ofast;-march=native;-Wno-error=unused-parameter>)
+target_compile_options(ImageGraph PRIVATE $<$<CONFIG:RELEASE>:-Ofast;-march=native;-Wno-unused-parameter>)
 target_compile_options(ImageGraph PRIVATE $<$<CONFIG:DEBUG>:-Og;-g>)
 if(CMAKE_CXX_COMPILER_ID STREQUAL "Clang")
   target_compile_options(ImageGraph PRIVATE -Wno-error=pass-failed)
@@ -37,9 +37,7 @@ target_link_libraries(ImageGraph PUBLIC Threads::Threads)
 find_package(TBB REQUIRED)
 target_link_libraries(ImageGraph PUBLIC TBB::tbb)
 
-# PCG
-find_package(pcg-cpp REQUIRED)
-target_link_libraries(ImageGraph PUBLIC pcg-cpp::pcg-cpp)
+# PCG is now used through a relative path.
 
 # Abseil
 find_package(absl REQUIRED)

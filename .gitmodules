@@ -1,0 +1,3 @@
+[submodule "dependencies/pcg-cpp"]
+	path = dependencies/pcg-cpp
+	url = https://github.com/imneme/pcg-cpp.git

@@ -1,8 +1,8 @@
 #include "VertexOrder.hpp"
+#include "internal/PCG.hpp"
 #include "internal/Random.hpp"
 #include <iostream>
 #include <limits>
-#include <pcg_random.hpp>
 
 template<typename T> static inline void testInfinityOverlap(ImageGraph::internal::boost_geometry::point_t<T> c1,
                                                             ImageGraph::internal::boost_geometry::point_t<T> c2, T p,

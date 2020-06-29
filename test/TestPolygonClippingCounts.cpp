@@ -1,9 +1,9 @@
 #include "VertexOrder.hpp"
+#include "internal/PCG.hpp"
 #include "internal/Random.hpp"
 #include <boost/range/irange.hpp>
 #include <execution>
 #include <iostream>
-#include <pcg_random.hpp>
 #include <utility>
 #include <vector>
 
