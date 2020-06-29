@@ -7,7 +7,6 @@ find_dependency(PkgConfig REQUIRED)
 pkg_check_modules(VIPS REQUIRED IMPORTED_TARGET vips vips-cpp gobject-2.0)
 find_dependency(Threads REQUIRED)
 find_dependency(TBB REQUIRED)
-find_dependency(pcg-cpp REQUIRED)
 find_dependency(absl REQUIRED)
 
 if(NOT TARGET ImageGraph::ImageGraph)
