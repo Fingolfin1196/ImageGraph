@@ -2,7 +2,7 @@ with import <nixpkgs> {};
 
 
 (overrideCC stdenv clang_9).mkDerivation {
-  name = "st16sim";
+  name = "ImageGraph";
 
   src = ./.;
 
