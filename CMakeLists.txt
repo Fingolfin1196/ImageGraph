@@ -5,6 +5,9 @@ project(ImageGraph)
 option(BUILD_EXAMPLE "Build Examples" ON)
 option(BUILD_TEST "Build Tests" ON)
 
+add_subdirectory(libs/pcg-cpp)
+include_directories(${PROJECT_SOURCE_DIR}/libs/pcg-cpp/include)
+
 add_library(ImageGraph SHARED)
 
 # C++ Standard Version and Compiler settings.
@@ -34,8 +37,7 @@ find_package(Threads REQUIRED)
 target_link_libraries(ImageGraph PUBLIC Threads::Threads)
 
 # Threading Building Blocks
-find_package(TBB REQUIRED)
-target_link_libraries(ImageGraph PUBLIC TBB::tbb)
+target_link_options(ImageGraph PUBLIC "-ltbb")
 
 # PCG is now used through a relative path.
 
